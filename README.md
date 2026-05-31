@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Next-Learn: Next-Gen Responsive SaaS Dashboard
 
-## Getting Started
+Next-Learn ek modern, fully responsive aur professional learning management dashboard hai. Is project ko **Next.js 14 (App Router)**, **Tailwind CSS**, aur **Supabase (PostgreSQL)** ka use karke banaya gaya hai. Yeh project desktop par ek standard modern SaaS look deta hai aur mobile par smoothly ek fully functional application me convert ho jata hai.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 Key Features (Mukhhye Visheshtayein)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Dynamic Data Fetching:** Supabase PostgreSQL database se live courses ka data (Title, Progress, Icons) real-time fetch hota hai.
+- **Bento Grid Layout:** Modern design standard ke mutabik Bento Grid layout use kiya gaya hai jo har screen size par auto-adjust hota hai.
+- **Dynamic Lucide Icons:** Database me save kiye gaye string names (jaise `Code`, `Terminal`, `Database`) ko read karke run-time par real Lucide React icons render hote hain.
+- **Premium UI Elements:** Custom mock analytics graph, visual progress bars, aur high-end dark-themed glassmorphism elements.
+- **Fully Responsive Navigation Drawer:** Mobile screens par sidebar hidden rehta hai aur Hamburger menu button par click karte hi ek smooth backdrop parda aur dynamic navigation drawer slide-in hota hai.
+- **Modular Component Architecture:** Code quality ko high rakhne ke liye components ko split kiya gaya hai (`Sidebar.js`, `CourseCard.js`), jisse code clean aur easily maintainable hai.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack Used
 
-## Learn More
+- **Framework:** Next.js 14 (App Router)
+- **Styling:** Tailwind CSS (Modern Dark Theme)
+- **Icons:** Lucide React
+- **Backend & Database:** Supabase (PostgreSQL)
+- **State Management:** React hooks (`useState`, `useEffect`)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Project Structure (Folder Architecture)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+src/
+├── app/
+│   ├── layout.js
+│   └── page.js           # Main entry point (Dashboard Layout)
+├── components/
+│   ├── Sidebar.js        # Dynamic Sidebar & Mobile Drawer Component
+│   └── CourseCard.js     # Modular Card Component for DB Loop
+└── lib/
+    └── supabase.js       # Supabase Client Initialization
