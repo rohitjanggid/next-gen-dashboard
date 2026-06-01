@@ -93,7 +93,7 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* MOBILE MENU BACKDROP BACKGROUND (Khaali parda) */}
+      {/* MOBILE MENU BACKDROP BACKGROUND */}
       {isMenuOpen && (
         <div 
           onClick={() => setIsMenuOpen(false)} 
